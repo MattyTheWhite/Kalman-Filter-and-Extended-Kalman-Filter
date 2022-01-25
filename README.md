@@ -1,0 +1,11 @@
+# Kalman-Filter-and-Extended-Kalman-Filter
+Evaluate the consistency and Implement a Kalman Filter for Navigation purposes, Implement an Extended Kalman Filter for Radar Tracking purposes Programming with PYTHON
+Simulate the one-dimensional motion system. By using ‘gen_data14’, simulate the system described above for the following three values of 𝜎𝑞2= 0, 1, 9, respectively. For each simulation consider at least 100 measurement points. The sampling interval Tk is equal to 1 s.
+If desired, you can pick your initial condition for the state vector by changing the appropriate line in the matlab/python function.
+You will obtain three simulation data sets, each related to a different motion. For each one, obtain a plot of the first state (position) versus the second state (velocity). Explains the plots and the effects that 𝑣𝑎𝑟𝑞 has on the states of the system.
+Answer:
+In this task we use ‘gen_data14’ in order to simulate the system described above for the following three values of 𝜎𝑞2 = 0, 1, 9. Furthermore, for each simulation we consider at least 100 measurement points and the sampling interval Tk is equal to 1 s. Also, we didn’t change initial condition for the state vector. We got three simulation data sets, each related to a different motion. For each one, we had a plot of the first state (position) versus the second state (velocity).
+6
+We implemented a 1-D motion considering a piecewise constant white noise acceleration model. For position Vs time whenever the value of Q is 1, 0 or 9, it represents that the measured states are similar to True states.
+Exceptionally when Q is 0 no change is observed over time in velocity vs time because the process noise is equal to 0 while the variance of measurement noise is equal to 1 in all the three simulations. For when the Q is 0 in velocity Vs time, we will not have coincidence for the true value and the estimated value.
+For the Position versus velocity whenever the value of Q is 0, it represents that the measured states are not similar to the True states and it means there is a big difference between the two states, while for the other simulations when Q is 1 and 9 it indicates that the measured states are almost similar to the True states.
